@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+app:
+  pagination:
+    default-size: 10
+    max-size: 100
+
+  mail:
+    enabled: false
+    retry-count: 1
+
+  security:
+    token-ttl: 10m
+    min-password-length: 10
+
+logging:
+  level:
+    kz.iitu: DEBUG

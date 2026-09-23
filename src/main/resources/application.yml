@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: spring-lab
+
+server:
+  port: 8080
+
+app:
+
+  pagination:
+    default-size: 20
+    max-size: 200
+
+  owner: Alibekova Symbat
+  group: IS-2415
+
+  mail:
+    from: no-reply@iitu.kz
+    retry-count: 3
+    timeout: 5s
+    enabled: true
+
+  security:
+    token-ttl: 30m
+    min-password-length: 8
+
+logging:
+  level:
+    kz.iitu: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,env,configprops,conditions
